@@ -1,0 +1,22 @@
+{
+  "name": "hypestock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batovpasha/hypestock.git"
+  },
+  "keywords": [
+    "reactive-programming"
+  ],
+  "author": "Dream Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batovpasha/hypestock/issues"
+  },
+  "homepage": "https://github.com/batovpasha/hypestock#readme"
+}
