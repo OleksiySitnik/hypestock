@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migration-dev": "knex migrate:latest --env development",
+    "migration-staging": "knex migrate:latest --env staging",
+    "migration-production": "knex migrate:latest --env production",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/batovpasha/hypestock/issues"
   },
-  "homepage": "https://github.com/batovpasha/hypestock#readme"
+  "homepage": "https://github.com/batovpasha/hypestock#readme",
+  "dependencies": {
+    "knex": "^0.21.15",
+    "mysql": "^2.18.1"
+  }
 }
