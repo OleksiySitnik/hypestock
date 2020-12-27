@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/batovpasha/hypestock#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "chista": "^1.0.0",
+    "express": "^4.17.1",
     "knex": "^0.21.15",
     "mysql": "^2.18.1"
   }
