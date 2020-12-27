@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "webbylab"
+    ],
+    "rules": {
+        "import/no-commonjs": 0,
+        "camelcase": 0,
+        "newline-after-var": 0
+    }
+}
