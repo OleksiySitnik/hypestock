@@ -1,9 +1,9 @@
-const app = require('./app');
+const server = require('./server');
 
 const { HOST, PORT } = require('./config/server');
 
 (async () => {
-    app.listen(PORT, HOST, () => {
+    server.listen(PORT, HOST, () => {
         console.log(`Server starts at ${HOST}:${PORT}`);
     });
 })();
