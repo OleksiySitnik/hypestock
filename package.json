@@ -11,6 +11,9 @@
     "migration-production": "knex migrate:latest --env production",
     "start": "node index.js"
   },
+  "pre-commit": [
+    "test:lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/batovpasha/hypestock.git"
