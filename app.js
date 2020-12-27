@@ -1,7 +1,9 @@
+const http    = require('http');
 const express = require('express');
 
-const middleware = require('./lib/api/rest-api/middleware');
-const router     = require('./lib/api/rest-api/router');
+const middleware    = require('./lib/api/rest-api/middleware');
+const restApiRouter = require('./lib/api/rest-api/router');
+const wsApiRouter   = require('./lib/api/websocket/router');
 
 // init express app
 const app = express();
@@ -11,6 +13,10 @@ app.use(middleware.json);
 app.use(middleware.urlencoded);
 
 // mount routes
-app.use('/api', router);
+app.use('/api', restApiRouter); // REST API's routes
 
-module.exports = app;
+const server = http.createServer(app);
+
+server.on('upgrade', wsApiRouter); // websocket API's routes
+
+module.exports = server;
