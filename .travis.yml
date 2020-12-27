@@ -1,0 +1,10 @@
+stages:
+  - test
+
+jobs:
+  include:
+    - stage: test lint
+      language: node_js
+      before_script:
+        - npm ci
+      script: npm run test:lint
