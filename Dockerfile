@@ -8,6 +8,7 @@ COPY package-lock.json package-lock.json
 RUN npm i
 
 COPY knexfile.js knexfile.js
+COPY db/ db/
 COPY config/ config/
 COPY migrations/ migrations/
 COPY index.js index.js
