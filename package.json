@@ -9,7 +9,8 @@
     "migration-dev": "knex migrate:latest --env development",
     "migration-staging": "knex migrate:latest --env staging",
     "migration-production": "knex migrate:latest --env production",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon -L index.js"
   },
   "pre-commit": [
     "test:lint"
@@ -50,6 +51,7 @@
     "eslint-plugin-no-require-lodash": "^1.1.0",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-security": "^1.4.0"
+    "eslint-plugin-security": "^1.4.0",
+    "nodemon": "^2.0.6"
   }
 }

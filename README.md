@@ -14,3 +14,11 @@ cp .env.sample .env
 # start the application services
 docker-compose up -d
 ```
+
+## Launching in dev mode
+```shell
+# build dev images
+docker-compose -f docker-compose.develop.yml -f docker-compose.yml build
+# start the application services in dev mode
+docker-compose -f docker-compose.develop.yml -f docker-compose.yml up -d
+```
