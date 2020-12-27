@@ -3,8 +3,10 @@ stages:
 
 jobs:
   include:
-    - stage: test lint
+    - stage: test
       language: node_js
+      node_js:
+        - 14
       before_script:
         - npm ci
       script: npm run test:lint
