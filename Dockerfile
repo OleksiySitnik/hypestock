@@ -12,7 +12,7 @@ COPY db/ db/
 COPY config/ config/
 COPY migrations/ migrations/
 COPY index.js index.js
-COPY app.js app.js
+COPY server.js server.js
 COPY lib/ lib/
 
 ## Add the wait script to the image
