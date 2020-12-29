@@ -30,5 +30,6 @@ services:
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - JWT_TOKEN_SECRET=${JWT_TOKEN_SECRET}
+      - IEX_TOKEN=${IEX_TOKEN}
     ports:
       - '8000:8000'
