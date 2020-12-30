@@ -7,6 +7,7 @@ COPY package-lock.json package-lock.json
 
 RUN npm i
 
+COPY static/ static/
 COPY knexfile.js knexfile.js
 COPY db/ db/
 COPY config/ config/

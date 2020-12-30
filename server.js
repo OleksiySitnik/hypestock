@@ -1,4 +1,5 @@
 const http    = require('http');
+const path    = require('path');
 const express = require('express');
 
 const middleware    = require('./lib/api/rest-api/middleware');
@@ -14,6 +15,11 @@ app.use(middleware.urlencoded);
 
 // mount routes
 app.use('/api', restApiRouter); // REST API's routes
+
+app.use(express.static(path.join(__dirname, 'static')));
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'static', 'index.html'));
+});
 
 const server = http.createServer(app);
 
